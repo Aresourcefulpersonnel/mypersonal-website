@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding:0px;
+    border:0px;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #d2d2d2;
+}
+.maincontainer{
+    width:100%;
+    margin: auto;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration:none;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    padding: 5px 0px;
+}
+h1{
+    font-family: "Jacquard+12+Charted", system-ui,  Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.container >img{
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+}
+
+.link{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    margin-bottom:50px;
+    align-content: center;
+    font-size: 0.8rem;
+}
+.link a{
+    text-decoration:none;
+    width:auto;
+    height: auto;
+    padding:10px 15px;
+    background-color: #6835ff;
+    color:white;
+    border-radius: 10px;
+}
+
+p{
+    font-size: 1rem;
+    font: 1em sans-serif, 'Open Sans';
+    margin: 5px 0px;
+}
+.outerdiv{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:50px;
+    gap:20px;
+}
+
+.innerdiv{
+    display: flex;
+    width: 45%;
+    gap: 20px;
+    background-color: white;
+    border-radius: 15px;
+}
+.innerdiv img{
+    border-radius:15px;
+}
+
+img{
+    float: left;
+    flex-direction: row;
+    width: 300px;
+    height: 250px;    
+}
+.contact-info, .social-links{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #4683bd;
+    width: 50%;
+    font-weight:normal;
+}
+footer{
+    width:100%;
+    height:auto;
+    padding:20px 50px;
+    color:white;
+    background-color: rgb(22, 21, 21);
+    display: flex;
+    flex-direction:column;
+    gap:50px;
+}
+.footer-content{
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;   
+}
+
+.copyright {
+    color: #d2d2d2;
+}
+@media screen and (max-width: 1200px){
+    .outerdiv{
+        display: flex;
+        flex-direction:column;
+        width: 100%; 
+    }
+    .innerdiv{
+        display: flex;
+        width:100%;
+    }
+    .footer-content{
+        display: flex;
+        gap:20px;
+        flex-direction: column;   
+    }
+    .contact-info, .social-links{
+        width:50%;
+    }
+}
